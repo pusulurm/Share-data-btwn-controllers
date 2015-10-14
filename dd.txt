@@ -1,0 +1,1 @@
+http://crudbetter.com/angular-share-data-between-controllers/

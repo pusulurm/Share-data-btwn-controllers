@@ -1,0 +1,53 @@
+<html ng-app="mainModule">
+<head>
+	<script src="require.js" data-main="main"></script>	
+</head>
+<body>
+	<div ng-controller = "controller1">
+
+		<h1>{{message1}}</h1>
+		<table>
+			<tr>
+				<td>
+					<h2>{{messageCount}}</h2>
+				</td>
+				<td>
+					<h2>{{sharedMsgCount}}</h2>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="message ++ " ng-click="incrimentMsgCount()"></input>
+					
+				</td>
+				<td>
+					<input type="button" value="shrd message ++ " ng-click="incrimentSharedMsgCount()"></input>
+				</td>
+			</tr>
+		</table>
+		
+		
+	</div>
+<hr/>
+	<div ng-controller = "controller2">
+		<h1>{{message2}}</h1>
+
+		<table>
+			<tr>
+				<td>
+					<h2>{{messageCount}}</h2>
+				</td>
+				<td>
+					<h2>{{sharedMsgCount1}}</h2>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="message ++ " ng-click="incrimentMsgCount()"></input>					
+				</td>				
+				<td></td>
+			</tr>
+		</table>		
+	</div>	
+</body>
+</html>
